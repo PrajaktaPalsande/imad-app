@@ -2,7 +2,7 @@ var express = require('express');
 var morgan = require('morgan');
 var path = require('path');
 var pool=require('pg').pool;
-var config-{
+var config -{
     user:'prajakta28989',
     database:'prajakta28989',
     host:'db.imad.hasura-app.io',
@@ -20,7 +20,7 @@ app.get('/ui/style.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'style.css'));
 });
 var pool=new Pool(config);
-app.get('/test-db',function(req,res)){
+app.get('/test-db',function(req,res){
     pool.query('SELECT * FROM article',function(err,result){
        if(err)
        {
